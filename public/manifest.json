@@ -1,0 +1,6 @@
+{
+  "short_name": "Kiosk Admin",
+  "name": "Kiosk Admin",
+  "start_url": ".",
+  "display": "standalone"
+}
