@@ -7,7 +7,7 @@ function App() {
       <h1>Welcome to the kiosk admin</h1>
       <Events></Events>
       <p>Manage events</p>
-      <p>Manage ecent seasons</p>
+      <p>Manage event seasons</p>
     </div>
   );
 }

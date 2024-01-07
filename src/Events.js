@@ -1,26 +1,28 @@
-import  {getEventsAndSeasons } from './util/api.js'
+import {useEffect, useState} from 'react';
+import  {getEventsAndSeasons} from './util/api.js';
+import EventFilters from './EventFilters.js';
+import EventResults from './EventResults.js';
+import EventTools from './EventTools.js';
 
 function Events() {
+    const [events, setEvents] = useState([]);
+    const [eventSeasons, setEventSeasons] = useState([{}]);
+    const [filters, setFilters] = useState({});
 
+    useEffect(() => {
+        const [eventSeasonData, eventData] = getEventsAndSeasons();
+
+        setEvents(eventData);
+        setEventSeasons(eventSeasonData);
+    }, [])
 
     return (
         <div>
-            <h2>Events</h2>
-            <table className="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Start Date</th>
-                        <th scope="col">End Date</th>
-                        <th scope="col">Event Type</th>
-                        <th scope="col">Event Name</th>
-                        <th scope="col">Actions</th>
-                    </tr>
-                </thead>
-                {}
-            </table>
+            <EventFilters/>
+            <EventTools/>
+            {events.length > 0 && <EventResults eventData={events}/>}
         </div>
-    );
-
+    )
 }
 
 export default Events;

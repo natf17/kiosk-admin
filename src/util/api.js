@@ -76,8 +76,7 @@ export function getEventsAndSeasons() {
             }
         }
     ];
+    console.log([seasons, events]);
 
     return [seasons, events];
 }
-
-export default {getEventsAndSeasons};
