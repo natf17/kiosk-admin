@@ -2,7 +2,6 @@ import {useEffect, useState} from 'react';
 import  {getEventsAndSeasons} from './util/api.js';
 import EventFilters from './EventFilters.js';
 import EventResults from './EventResults.js';
-import EventTools from './EventTools.js';
 
 function Events() {
     const [events, setEvents] = useState([]);
@@ -18,8 +17,8 @@ function Events() {
 
     return (
         <div>
+            <h1 className='text-center p-4'>Manage Events</h1>
             <EventFilters/>
-            <EventTools/>
             {events.length > 0 && <EventResults eventData={events}/>}
         </div>
     )

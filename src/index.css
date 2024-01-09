@@ -6,3 +6,39 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+.navbar-container {
+  background-color: blueviolet;
+  width: 17rem;
+  position: fixed;
+  display: block;
+  height: 100%;
+}
+
+.nav-item-header {
+  display: block;
+}
+
+.navitem {
+  display: flex;
+}
+
+.page-content-container {
+  margin-left: 20rem;
+}
+
+.topbar-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid purple;
+}
+.topbar-name {
+  height: 4rem;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.filter-events-text {
+  vertical-align: middle;
+}
