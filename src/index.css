@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: cornsilk;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -9,7 +10,7 @@ body {
 
 
 .navbar-container {
-  background-color: blueviolet;
+  background-color: firebrick;
   width: 17rem;
   position: fixed;
   display: block;
@@ -31,7 +32,8 @@ body {
 .topbar-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid purple;
+  border-bottom: 1px solid steelblue;
+  background-color: steelblue;
 }
 .topbar-name {
   height: 4rem;
@@ -41,4 +43,28 @@ body {
 
 .filter-events-text {
   vertical-align: middle;
+}
+
+.topbar-name a {
+  color: cornsilk;
+  text-decoration: none;
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-menu-container {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ul.dropdown-list {
+  list-style-type: none;
+  padding-left: 0; 
+  margin-bottom: 0;
 }

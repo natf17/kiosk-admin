@@ -12,9 +12,14 @@ function Layout() {
                     <ul>
                         <li className="nav-item"><Link to="/">Home</Link></li>
                         <li className="nav-item">
-                            <div className="nav-item-header">Manage events</div>
-                            <div className="nav-item-link-container"><Link to="/events">Edit events</Link></div>
-                            <div className="nav-item-link-container"><Link to="/events">Add events</Link></div>
+                            <div className="nav-item-header">Single events</div>
+                            <div className="nav-item-link-container"><Link to="/events">Edit an event</Link></div>
+                            <div className="nav-item-link-container"><Link to="/events/add">Add an event</Link></div>
+                        </li>
+                        <li className="nav-item">
+                            <div className="nav-item-header">Manage event seasons</div>
+                            <div className="nav-item-link-container"><Link to="/events">Edit a season</Link></div>
+                            <div className="nav-item-link-container"><Link to="/events">Add a season</Link></div>
                         </li>
                         <li className="nav-item">
                             <div className="nav-item-header">Manage pages</div>
